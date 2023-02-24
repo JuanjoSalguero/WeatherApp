@@ -32,7 +32,7 @@ function searchWeather() {
     
     // Get API key and city input value
     const APIKey = '35c55d3bd8d684c6a1efac8123fba2bf';
-    const city = input.value;
+    const city = input.value.trim(); // Uses the trim() method to remove whitespace from the beginning and end of the input value
 
     // Check if city input value is empty
     if (city === '') {
